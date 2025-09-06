@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+    .toggle-checkbox:checked {
+      @apply: bg-[#D41111];
+      right: 0;
+    }
+    .toggle-checkbox:checked+.toggle-label {
+      @apply: bg-[#D41111];
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[#1C1C1E]">
+<div class="relative flex size-full min-h-screen flex-col justify-between bg-[#1C1C1E] font-sans text-white dark group/design-root" style='font-family: Inter, "Noto Sans", sans-serif;'>
+<div class="flex-grow">
+<header class="sticky top-0 z-10 bg-[#1C1C1E]/80 backdrop-blur-sm">
+<div class="flex items-center p-4 pb-3">
+<button class="text-white">
+<span class="material-symbols-outlined">arrow_back_ios_new</span>
+</button>
+<h1 class="flex-1 text-center text-xl font-bold">Alerts</h1>
+<div class="w-8"></div>
+</div>
+</header>
+<main class="px-4">
+<section class="pt-5">
+<h2 class="text-2xl font-bold">Emergency</h2>
+<div class="mt-4 grid grid-cols-2 gap-4">
+<button class="flex flex-col items-center justify-center gap-2 rounded-xl bg-[#D41111] py-4 transition-colors hover:bg-red-700">
+<span class="material-symbols-outlined text-3xl">call</span>
+<span class="text-lg font-bold">Call 911</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-2 rounded-xl bg-[#3A3A3C] py-4 transition-colors hover:bg-[#4A4A4C]">
+<span class="material-symbols-outlined text-3xl">call</span>
+<span class="text-lg font-bold">Call 988</span>
+</button>
+</div>
+</section>
+<section class="pt-8">
+<h2 class="text-2xl font-bold">Alert Triggers</h2>
+<div class="mt-4 space-y-3 rounded-xl bg-[#2C2C2E] px-4 py-3">
+<div class="flex items-center justify-between py-2">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-gray-300">public</span>
+<p class="font-semibold">Geofence Breach</p>
+</div>
+<label class="relative inline-flex cursor-pointer items-center" for="geofence-toggle">
+<input checked="" class="peer sr-only toggle-checkbox" id="geofence-toggle" type="checkbox" value=""/>
+<div class="peer h-6 w-11 rounded-full bg-gray-600 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-[#D41111] peer-checked:after:translate-x-full peer-focus:outline-none dark:border-gray-600 dark:bg-gray-700"></div>
+</label>
+</div>
+<div class="border-t border-gray-700"></div>
+<div class="flex items-center justify-between py-2">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-gray-300">speed</span>
+<p class="font-semibold">Speeding Alert</p>
+</div>
+<label class="relative inline-flex cursor-pointer items-center" for="speeding-toggle">
+<input class="peer sr-only toggle-checkbox" id="speeding-toggle" type="checkbox" value=""/>
+<div class="peer h-6 w-11 rounded-full bg-gray-600 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-[#D41111] peer-checked:after:translate-x-full peer-focus:outline-none dark:border-gray-600 dark:bg-gray-700"></div>
+</label>
+</div>
+<div class="border-t border-gray-700"></div>
+<div class="flex items-center justify-between py-2">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-gray-300">power_settings_new</span>
+<p class="font-semibold">Device Tampering</p>
+</div>
+<label class="relative inline-flex cursor-pointer items-center" for="tampering-toggle">
+<input checked="" class="peer sr-only toggle-checkbox" id="tampering-toggle" type="checkbox" value=""/>
+<div class="peer h-6 w-11 rounded-full bg-gray-600 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-[#D41111] peer-checked:after:translate-x-full peer-focus:outline-none dark:border-gray-600 dark:bg-gray-700"></div>
+</label>
+</div>
+</div>
+</section>
+<section class="pt-8">
+<h2 class="text-2xl font-bold">Alert Preferences</h2>
+<div class="mt-4 space-y-3 rounded-xl bg-[#2C2C2E] px-4 py-3">
+<div class="flex items-center justify-between py-2">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-gray-300">volume_up</span>
+<p class="font-semibold">Sound</p>
+</div>
+<button class="flex items-center justify-between text-gray-400">
+<span>Default</span>
+<span class="material-symbols-outlined text-gray-500">chevron_right</span>
+</button>
+</div>
+<div class="border-t border-gray-700"></div>
+<div class="flex items-center justify-between py-2">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-gray-300">vibration</span>
+<p class="font-semibold">Vibration</p>
+</div>
+<label class="relative inline-flex cursor-pointer items-center" for="vibration-toggle">
+<input checked="" class="peer sr-only toggle-checkbox" id="vibration-toggle" type="checkbox" value=""/>
+<div class="peer h-6 w-11 rounded-full bg-gray-600 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-[#D41111] peer-checked:after:translate-x-full peer-focus:outline-none dark:border-gray-600 dark:bg-gray-700"></div>
+</label>
+</div>
+</div>
+</section>
+<section class="pt-8">
+<h2 class="text-2xl font-bold">Critical Events</h2>
+<div class="mt-4 space-y-3">
+<div class="flex items-center gap-4 rounded-xl bg-[#2C2C2E] p-4">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#D41111]/20 text-[#D41111]">
+<span class="material-symbols-outlined text-3xl">car_crash</span>
+</div>
+<div class="flex-grow">
+<p class="font-semibold">Vehicle 12345 has left the designated area</p>
+<p class="text-sm text-gray-400">10:30 AM</p>
+</div>
+<span class="material-symbols-outlined text-gray-500">chevron_right</span>
+</div>
+<div class="flex items-center gap-4 rounded-xl bg-[#2C2C2E] p-4">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#4A4A4C] text-gray-300">
+<span class="material-symbols-outlined text-3xl">near_me</span>
+</div>
+<div class="flex-grow">
+<p class="font-semibold">Vehicle 12345 has entered the designated area</p>
+<p class="text-sm text-gray-400">10:00 AM</p>
+</div>
+<span class="material-symbols-outlined text-gray-500">chevron_right</span>
+</div>
+</div>
+</section>
+</main>
+</div>
+<footer class="sticky bottom-0 border-t border-gray-800 bg-[#1C1C1E]/80 backdrop-blur-sm">
+<nav class="flex justify-around py-2">
+<a class="flex flex-col items-center gap-1 text-gray-400" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<p class="text-xs">Dashboard</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-400" href="#">
+<span class="material-symbols-outlined">description</span>
+<p class="text-xs">Records</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-[#D41111]" href="#">
+<span class="material-symbols-outlined">notifications_active</span>
+<p class="text-xs font-bold">Alerts</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-400" href="#">
+<span class="material-symbols-outlined">settings</span>
+<p class="text-xs">Settings</p>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

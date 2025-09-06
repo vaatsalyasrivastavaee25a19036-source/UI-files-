@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B600%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #1173d4;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[#111418] font-sans">
+<div class="relative flex size-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden text-white" style='font-family: Inter, "Noto Sans", sans-serif;'>
+<div class="flex-grow">
+<header class="flex items-center justify-between p-4">
+<button class="flex items-center justify-center size-10">
+<span class="material-symbols-outlined text-2xl"> arrow_back_ios_new </span>
+</button>
+<h1 class="text-xl font-bold">Records</h1>
+<div class="w-10"></div>
+</header>
+<main class="px-4">
+<h2 class="text-lg font-semibold text-gray-300 mb-4 mt-2">Weather Forecast</h2>
+<div class="mb-6 overflow-x-auto pb-4">
+<div class="flex space-x-3">
+<div class="flex flex-col items-center gap-2 rounded-lg bg-[#1C2127] p-4 min-w-[80px]">
+<p class="text-sm font-medium text-gray-300">Now</p>
+<span class="material-symbols-outlined text-3xl text-yellow-400">sunny</span>
+<p class="text-lg font-bold">68°</p>
+</div>
+<div class="flex flex-col items-center gap-2 rounded-lg bg-[#1C2127] p-4 min-w-[80px]">
+<p class="text-sm font-medium text-gray-300">3 PM</p>
+<span class="material-symbols-outlined text-3xl text-blue-300">water_drop</span>
+<p class="text-lg font-bold">65°</p>
+</div>
+<div class="flex flex-col items-center gap-2 rounded-lg bg-[#1C2127] p-4 min-w-[80px]">
+<p class="text-sm font-medium text-gray-300">6 PM</p>
+<span class="material-symbols-outlined text-3xl text-gray-400">cloudy</span>
+<p class="text-lg font-bold">62°</p>
+</div>
+<div class="flex flex-col items-center gap-2 rounded-lg bg-[#1C2127] p-4 min-w-[80px]">
+<p class="text-sm font-medium text-gray-300">9 PM</p>
+<span class="material-symbols-outlined text-3xl text-gray-400">cloudy</span>
+<p class="text-lg font-bold">59°</p>
+</div>
+<div class="flex flex-col items-center gap-2 rounded-lg bg-[#1C2127] p-4 min-w-[80px]">
+<p class="text-sm font-medium text-gray-300">12 AM</p>
+<span class="material-symbols-outlined text-3xl text-indigo-300">clear_night</span>
+<p class="text-lg font-bold">55°</p>
+</div>
+</div>
+</div>
+<h2 class="text-lg font-semibold text-gray-300 mb-4">Past Locations</h2>
+<div class="space-y-2">
+<div class="flex items-center gap-4 rounded-lg bg-[#1C2127] p-4">
+<div class="flex items-center justify-center rounded-full bg-[#283039] shrink-0 size-12">
+<span class="material-symbols-outlined text-2xl"> home </span>
+</div>
+<div class="flex-grow">
+<p class="text-base font-medium leading-normal">Home</p>
+<p class="text-sm font-normal text-gray-400">123 Elm Street</p>
+</div>
+<button class="flex items-center justify-center size-8 text-gray-400">
+<span class="material-symbols-outlined text-2xl"> chevron_right </span>
+</button>
+</div>
+<div class="flex items-center gap-4 rounded-lg bg-[#1C2127] p-4">
+<div class="flex items-center justify-center rounded-full bg-[#283039] shrink-0 size-12">
+<span class="material-symbols-outlined text-2xl"> location_on </span>
+</div>
+<div class="flex-grow">
+<p class="text-base font-medium leading-normal">Golden Gate Bridge</p>
+<p class="text-sm font-normal text-gray-400">San Francisco, CA</p>
+</div>
+<button class="flex items-center justify-center size-8 text-gray-400">
+<span class="material-symbols-outlined text-2xl"> chevron_right </span>
+</button>
+</div>
+<div class="flex items-center gap-4 rounded-lg bg-[#1C2127] p-4">
+<div class="flex items-center justify-center rounded-full bg-[#283039] shrink-0 size-12">
+<span class="material-symbols-outlined text-2xl"> location_on </span>
+</div>
+<div class="flex-grow">
+<p class="text-base font-medium leading-normal">Pier 39</p>
+<p class="text-sm font-normal text-gray-400">San Francisco, CA</p>
+</div>
+<button class="flex items-center justify-center size-8 text-gray-400">
+<span class="material-symbols-outlined text-2xl"> chevron_right </span>
+</button>
+</div>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-[#1c2127]/80 backdrop-blur-sm border-t border-[#283039] pb-4 pt-2 mt-6">
+<nav class="flex justify-around">
+<a class="flex flex-col items-center justify-end gap-1 text-gray-400" href="#">
+<span class="material-symbols-outlined text-2xl"> dashboard </span>
+<p class="text-xs font-medium">Dashboard</p>
+</a>
+<a class="flex flex-col items-center justify-end gap-1 text-[var(--primary-color)]" href="#">
+<div class="bg-[var(--primary-color)]/20 rounded-full p-2">
+<span class="material-symbols-outlined text-2xl text-[var(--primary-color)]" style="font-variation-settings: 'FILL' 1;"> folder </span>
+</div>
+<p class="text-xs font-bold text-[var(--primary-color)]">Records</p>
+</a>
+<a class="flex flex-col items-center justify-end gap-1 text-gray-400" href="#">
+<span class="material-symbols-outlined text-2xl"> notifications </span>
+<p class="text-xs font-medium">Alerts</p>
+</a>
+<a class="flex flex-col items-center justify-end gap-1 text-gray-400" href="#">
+<span class="material-symbols-outlined text-2xl"> settings </span>
+<p class="text-xs font-medium">Settings</p>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>
